@@ -1,0 +1,92 @@
+{
+  "info": {
+    "name": "Trainee CRUD API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Trainee",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "name", "value": "Rahul", "type": "text" },
+            { "key": "email", "value": "rahul@example.com", "type": "text" },
+            { "key": "course", "value": "Node.js", "type": "text" },
+            { "key": "age", "value": "23", "type": "text" },
+            { "key": "image", "type": "file", "src": "" }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/trainees",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "trainees"]
+        }
+      }
+    },
+    {
+      "name": "Get All Trainees",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/trainees",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "trainees"]
+        }
+      }
+    },
+    {
+      "name": "Get Single Trainee",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/trainees/:id",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "trainees", ":id"]
+        }
+      }
+    },
+    {
+      "name": "Update Trainee",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "name", "value": "Rahul Sharma", "type": "text" },
+            { "key": "course", "value": "MERN Stack", "type": "text" },
+            { "key": "image", "type": "file", "src": "" }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/trainees/:id",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "trainees", ":id"]
+        }
+      }
+    },
+    {
+      "name": "Delete Trainee",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/trainees/:id",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "trainees", ":id"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000"
+    }
+  ]
+}

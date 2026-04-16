@@ -1,0 +1,31 @@
+{
+  "name": "trainee-crud-api",
+  "version": "1.0.0",
+  "description": "Basic CRUD API for trainees with local image upload using Node.js, Express, MongoDB, and Multer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "mongoose",
+    "multer",
+    "crud",
+    "image-upload"
+  ],
+  "author": "OpenAI",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.4.1",
+    "multer": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
